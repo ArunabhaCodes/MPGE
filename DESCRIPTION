@@ -1,10 +1,10 @@
 Package: MPGE
 Type: Package
-Title: A two-step approach to testing overall effect of gene-environment interaction for multiple phenotypes
-Version: 0.1.0
+Title: A Two-Step Approach to Testing Overall Effect of Gene-Environment Interaction for Multiple Phenotypes
+Version: 1.0.0
 Authors@R: c(person("Arunabha", "Majumdar", email = "statgen.arunabha@gmail.com", role = c("aut", "cre")), person("Tanushree", "Haldar", email = "tanushree.haldar@gmail.com", role = "aut"))
 Description: Interaction between a genetic variant (e.g., a SNP) and an environmental variable (e.g., physical activity) can have a shared effect on multiple phenotypes (e.g., LDL and HDL). MPGE is a two-step method to test for an overall interaction effect on multiple phenotypes. In first step, the method tests for an overall marginal genetic association between the genetic variant and the multivariate phenotype. In the second step, SNPs which show an evidence of marginal overall genetic effect in the first step are prioritized while testing for an overall GxE effect.
-    Use four spaces when indenting paragraphs within the Description.
+Depends: R (>= 3.5.0)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
@@ -12,7 +12,7 @@ RoxygenNote: 6.1.1
 Suggests: 
     knitr,
     rmarkdown,
-    testthat (>= 2.1.0)
+    testthat
 VignetteBuilder: knitr
 Imports: 
     car,

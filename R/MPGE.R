@@ -40,6 +40,9 @@
 #'
 #'
 #' @docType package
+#' @importFrom stats lm
+#' @importFrom utils capture.output
+#' @importFrom utils read.table
 #'
 #' @name MPGE
 #'

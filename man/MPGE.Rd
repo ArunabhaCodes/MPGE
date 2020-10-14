@@ -4,8 +4,9 @@
 \name{MPGE}
 \alias{MPGE}
 \alias{MPGE-package}
-\title{MPGE: an R package to implement a two-step approach to testing gene-environment interaction
- for multiple phenotypes.
+\title{MPGE: an R package to implement a two-step approach to testing overall effect of
+ gene-environment interaction for multiple phenotypes.}
+\description{
 Interaction between a genetic variant (e.g., a SNP) and an environmental variable
 (e.g., physical activity) can have a shared effect on multiple phenotypes
  (e.g., LDL and HDL). MPGE is a two-step method to test for an overall interaction
@@ -16,8 +17,9 @@ Interaction between a genetic variant (e.g., a SNP) and an environmental variabl
       for an overall GxE effect. That is, a more liberal threshold of
       significance level is considered in the second step while testing for
        an overall GxE effect for these promising SNPs compared to the other
-        SNPs.}
-\description{
+        SNPs.
+}
+\details{
 The package consists of following functions:
 \code{\link{mv_G_GE}}, \code{\link{WHT}}; \code{\link{SST}}.
 }

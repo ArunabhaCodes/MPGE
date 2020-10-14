@@ -3,3 +3,6 @@
 export(SST)
 export(WHT)
 export(mv_G_GE)
+importFrom(stats,lm)
+importFrom(utils,capture.output)
+importFrom(utils,read.table)
