@@ -1,0 +1,7 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^doc$
+^Meta$
+^README\.Rmd$
+^\.travis\.yml$
+^README\.html$
