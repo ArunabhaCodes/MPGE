@@ -3,7 +3,6 @@
 \docType{package}
 \name{MPGE}
 \alias{MPGE}
-\alias{MPGE-package}
 \title{MPGE: an R package to implement a two-step approach to testing overall effect of
 gene-environment interaction for multiple phenotypes.}
 \description{

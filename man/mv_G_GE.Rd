@@ -17,7 +17,7 @@ adjusted for relevant covariates (age, sex, principal components of
 genetic ancestries, etc) beforehand. Therefore, each column of pheno matrix should be the adjusted
 residuals
 of the corresponding phenotype. Each final phenotype (column) should be continuous
-and normally distrbuted. No default.}
+and normally distributed. No default.}
 
 \item{geno}{A numeric matrix/data.frame (for a batch of genetic variants), or a numeric vector (for a single genetic variant).
 It contains the genotype values of the genetic variants/variant across the individuals.

@@ -4,8 +4,10 @@
 \name{phenotype_data}
 \alias{phenotype_data}
 \title{An example of phenotype data.}
-\format{A numeric matrix or data.frame with three columns for three phenotypes
-and 500 rows for the individuals in the sample.}
+\format{
+A numeric matrix or data.frame with three columns for three phenotypes
+and 500 rows for the individuals in the sample.
+}
 \usage{
 data(phenotype_data)
 }

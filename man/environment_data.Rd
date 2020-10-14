@@ -10,9 +10,11 @@ in the phenotype and genotype data. Here, the environmental variable has two
 categories which were coded as 1 and 0 (e.g., smokers and non-smokers).
 Instead of numeric values, these can also be considered to be factors in
 the absence of a defined order in the categories.}
-\format{A data.frame with single column for the environmental
+\format{
+A data.frame with single column for the environmental
 variable. The order of the 500 individuals in the row must be the same as provided
-in the phenotype and genotype data:}
+in the phenotype and genotype data:
+}
 \usage{
 data(environment_data)
 }

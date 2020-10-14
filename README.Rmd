@@ -1,6 +1,3 @@
-<!-- badges: start -->
-  [![Travis build status](https://travis-ci.org/ArunabhaCodes/MPGE.svg?branch=master)](https://travis-ci.org/ArunabhaCodes/MPGE)
-<!-- badges: end -->
 ---
 output: github_document
 ---
@@ -26,7 +23,7 @@ same two sets of p-values described above.
 
 # Installation
 
-You can install eGST from CRAN.
+You can install MPGE from CRAN.
 
 ```{r install_package, eval=FALSE, collapse = TRUE}
 install.packages("MPGE")
@@ -71,7 +68,7 @@ Here, environment_data is a data frame with single column for the environmental 
 result <- mv_G_GE(phenotype_data, genotype_data, environment_data)
 result
 ```
- The output ('result') of mv_G_GE is a data.frame. Each row of the output provides the pair of p-values for each genetic variant, first one (G.P) from the test of marginal overall genetic association, and the second one (GE.P) from the test of overall GxE effect in presence of possible marginal genetic effect and marginal environmental effect.
+ The output ("result") of mv_G_GE is a data.frame. Each row of the output provides the pair of p-values for each genetic variant, first one (G.P) from the test of marginal overall genetic association, and the second one (GE.P) from the test of overall GxE effect in presence of possible marginal genetic effect and marginal environmental effect.
 
 # Run WHT and SST
 
@@ -92,7 +89,7 @@ result <- WHT(mv_G_GxE_pvalues)
 str(result)
 ```
 
- The output is a list, first element of which ('GEsnps') is a character vector providing the set of SNPs found to have a significant signal of overall GxE effect. Second element is a dataframe providing the adjusted GxE test p-values (with the corresponding genetic variants in the first column) obtained by the weighted hypothesis testing procedure adjusting for multiple comparison. 
+ The output is a list, first element of which ("GEsnps") is a character vector providing the set of SNPs found to have a significant signal of overall GxE effect. Second element is a dataframe providing the adjusted GxE test p-values (with the corresponding genetic variants in the first column) obtained by the weighted hypothesis testing procedure adjusting for multiple comparison. 
 
 ```{r example_SST, eval=FALSE, collapse = TRUE}
 #Run SST to implement the subset testing to adjust for multiple comparison, and find the significant SNPs with an overall GxE effect.
@@ -103,8 +100,10 @@ str(result)
 Here, we run SST for the same example data analyzed by WHT function above. The output from SST is a character vector providing the set of SNPs having a significant signal of overall GxE effect identified by subset testing to adjust for the multiple comparison.
 
 #Getting more details
-For more details, please see the MPGE refernce manual.
+For more details, please see the MPGE reference manual.
 For any question, please send an email to statgen.arunabha@gmail.com or tanushree.haldar@gmail.com.
 Also, you can see our manuscript for more details related to the main method: A Majumdar, KS Burch, S Sankararaman, B Pasaniuc, WJ Gauderman, JS Witte (2020) A two-step approach to testing overall effect of gene-environment interaction for multiple phenotypes. bioRxiv.
 
-
+<!-- badges: start -->
+  [![Travis build status](https://travis-ci.org/ArunabhaCodes/MPGE.svg?branch=master)](https://travis-ci.org/ArunabhaCodes/MPGE)
+<!-- badges: end -->
