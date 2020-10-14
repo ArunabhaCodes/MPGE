@@ -9,34 +9,34 @@ WHT(PVAL, first_bin_size = 5, FWER = 0.05)
 }
 \arguments{
 \item{PVAL}{A data.frame with three columns.
- The first column (PVAL$SNP) provides the name of all SNPs or genetic variants tested.
- Second column (PVAL$G.P) contains the p-values of the variants obtained from testing
- an overall marginal genetic
- association between the multivariate phenotype and each genetic variant individually.
+The first column (PVAL$SNP) provides the name of all SNPs or genetic variants tested.
+Second column (PVAL$G.P) contains the p-values of the variants obtained from testing
+an overall marginal genetic
+association between the multivariate phenotype and each genetic variant individually.
 And the third column (PVAL$GE.P) contains the p-values obtained from testing overall GxE effect on the
 multivariate phenotype in presence of possible marginal effect due to the genetic variant and
 a marginal effect
 due to the environmental variable. Number of rows in PVAL is the same as the number
- of genetic variants, and it has the same structure as in the output of \code{\link{mv_G_GE}}.
-  No default.}
+of genetic variants, and it has the same structure as in the output of \code{\link{mv_G_GE}}.
+No default.}
 
 \item{first_bin_size}{A positive integer providing the number of SNPs in the top bin
- while ranking the SNPs or genetic variants according to their
+while ranking the SNPs or genetic variants according to their
 relative importance in the first step, which is evaluated with respect to the strength of
- overall marginal genetic association with
+overall marginal genetic association with
 the multivariate phenotype. Default is 5.}
 
 \item{FWER}{A positive real number between 0 and 1 providing the overall
- family wise error rate to be maintained while
+family wise error rate to be maintained while
 identifying the genetic variants having a genome-wide significant overall GxE effect
- on the multivariate phenotype.
+on the multivariate phenotype.
 Default is 0.05.}
 }
 \value{
 The output produced by the function is a list consisting of:
-   \item{GEsnps}{Vector of SNPs/genetic variants identified to have a genome-wide significant overall GxE effect.}
-   \item{adjusted.PV}{A data.frame providing the adjusted p-values with the corresponding
-    genetic variants obtained by the weighted multiple hypothesis testing procedure.}
+\item{GEsnps}{Vector of SNPs/genetic variants identified to have a genome-wide significant overall GxE effect.}
+\item{adjusted.PV}{A data.frame providing the adjusted p-values with the corresponding
+genetic variants obtained by the weighted multiple hypothesis testing procedure.}
 }
 \description{
 Run \code{\link{WHT}} to adjust for multiple testing

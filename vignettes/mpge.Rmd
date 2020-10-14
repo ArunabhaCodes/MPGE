@@ -3,7 +3,7 @@ title: "MPGE package: A two-step approach to testing overall effect of gene-envi
 author: "Arunabha Majumdar, Tanushree Haldar"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{MPGE tutorial}
+  %\VignetteIndexEntry{MPGE package: A two-step approach to testing overall effect of gene-environment interaction for multiple phenotypes}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -22,8 +22,8 @@ same two sets of p-values described above.
 You can install MPGE from CRAN.
 
 ```{r install_package, eval=FALSE, collapse = TRUE}
-install.packages("MPGE")
-library("MPGE")
+#install.packages("MPGE")
+#library("MPGE")
 ```
 
 # Run mv_G_GE

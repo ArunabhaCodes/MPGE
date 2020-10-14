@@ -7,16 +7,16 @@
 p-values across genetic variants (SNPs).
 Here, mv_G_GxE_pvalues is a data.frame with three columns. First column
 lists the set of 1000 genetic variants. Second column provides
- the vector of p-values obtained from testing the marginal multivariate
-  genetic association for these SNPs. And the third column provides the
-   vector of p-values obtained from testing the overall GxE effect
-    in presence of possible marginal genetic effect and marginal environmental effect.}
+the vector of p-values obtained from testing the marginal multivariate
+genetic association for these SNPs. And the third column provides the
+vector of p-values obtained from testing the overall GxE effect
+in presence of possible marginal genetic effect and marginal environmental effect.}
 \format{A data.frame with three columns. First column
 lists the set of 1000 genetic variants. Second column provides
- the vector of p-values obtained from testing the marginal multivariate
-  genetic association for these SNPs. And the third column provides the
-   vector of p-values obtained from testing the overall GxE effect
-    in presence of possible marginal genetic effect and marginal environmental effect:}
+the vector of p-values obtained from testing the marginal multivariate
+genetic association for these SNPs. And the third column provides the
+vector of p-values obtained from testing the overall GxE effect
+in presence of possible marginal genetic effect and marginal environmental effect:}
 \usage{
 data(mv_G_GxE_pvalues)
 }
@@ -25,10 +25,10 @@ An example of step 1 (marginal genetic association) and step 2 (GxE interaction)
 p-values across genetic variants (SNPs).
 Here, mv_G_GxE_pvalues is a data.frame with three columns. First column
 lists the set of 1000 genetic variants. Second column provides
- the vector of p-values obtained from testing the marginal multivariate
-  genetic association for these SNPs. And the third column provides the
-   vector of p-values obtained from testing the overall GxE effect
-    in presence of possible marginal genetic effect and marginal environmental effect.
+the vector of p-values obtained from testing the marginal multivariate
+genetic association for these SNPs. And the third column provides the
+vector of p-values obtained from testing the overall GxE effect
+in presence of possible marginal genetic effect and marginal environmental effect.
 }
 \examples{
 data(mv_G_GxE_pvalues)
