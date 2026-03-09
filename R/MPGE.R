@@ -39,11 +39,11 @@
 #' bioRxiv, doi: https://doi.org/10.1101/2020.07.06.190256
 #'
 #'
-#' @docType package
 #' @importFrom stats lm
 #' @importFrom utils capture.output
 #' @importFrom utils read.table
 #'
-#' @name MPGE
+#' @name MPGE 
+"_PACKAGE"
 #'
 NULL
