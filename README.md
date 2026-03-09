@@ -152,7 +152,7 @@ manual. For any question, please send an email to
 can see our manuscript for more details related to the main method: A
 Majumdar, KS Burch, T Haldar, S Sankararaman, B Pasaniuc, WJ Gauderman,
 JS Witte. A two-step approach to testing overall effect of
-gene-environment interaction for multiple phenotypes.Bioinformatics 36,
+gene-environment interaction for multiple phenotypes. Bioinformatics 36,
 no. 24 (2020): 5640-5648.
 
 <!-- badges: start -->
