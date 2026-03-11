@@ -17,6 +17,7 @@ Roxygen: list(markdown = TRUE)
 Suggests: 
     knitr,
     rmarkdown,
+    spelling,
     testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Imports: 
@@ -25,3 +26,4 @@ Imports:
     stats,
     utils
 Config/testthat/edition: 3
+Language: en-US
