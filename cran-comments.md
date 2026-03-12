@@ -18,5 +18,3 @@ There is 1 note in the result of check_win_devel() and check_win_release(). Note
 
 
 
-
-
