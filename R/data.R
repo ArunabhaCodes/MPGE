@@ -1,7 +1,7 @@
 # Documentation of the example dataset to demonstrate how to run the main functions in MPGE.
 #'An example of phenotype data.
 #'
-#'Here phenotype\_data is a data.frame with three columns for three phenotypes
+#'Here phenotype_data is a data.frame with three columns for three phenotypes
 #' and the number of rows to be the number of individuals in the sample (500 in this toy data).
 #'  Data for each phenotype provided must be adjusted individually for relevant
 #'   covariates (e.g., age, sex, genetic ancestry) beforehand,
@@ -17,7 +17,7 @@
 "phenotype_data"
 
 #'An example of genotype data for two genetic variants (SNPs).
-#'Here, genotype\_data is a data.frame with the columns as SNPs (e.g., rs1 and rs2 here).
+#'Here, genotype_data is a data.frame with the columns as SNPs (e.g., rs1 and rs2 here).
 #' The rows correspond to the 500 individuals in the same order as in the phenotype data.
 #'
 #'@usage data(genotype_data)

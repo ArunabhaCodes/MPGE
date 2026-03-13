@@ -1,4 +1,4 @@
-context("check function SST")
+#context("check function SST")
 test_that("Throws error if PVAL is not a data.frame of at least 3 columns", {
     expect_error(SST(1:10), "PVAL must be a data.frame with 3 columns")
     expect_error(SST(mv_G_GxE_pvalues[, 1:2]), "PVAL must have 3 columns, named 'SNP', 'G.P', 'GE.P'")

@@ -17,17 +17,17 @@ compared to the other SNPs.
 
 This R-package consists of the following main functions:
 
-1.  mv\_G\_GE: for a batch of genetic variants, this function provides
-    two different p-values for each genetic variant, one from the test
-    of marginal overall genetic association with multiple phenotypes,
-    and the other from the test of overall GxE effect on multivariate
+1.  mv_G_GE: for a batch of genetic variants, this function provides two
+    different p-values for each genetic variant, one from the test of
+    marginal overall genetic association with multiple phenotypes, and
+    the other from the test of overall GxE effect on multivariate
     phenotype allowing for a possible marginal effect due to the genetic
     variant and a marginal effect due to the environmental variable.
 2.  WHT: this function implements the weighted multiple hypothesis
     testing procedure to adjust for multiple testing while combining the
     two steps of testing gene-environment interaction in the two-step
     GxE testing procedure, given two sets of p-values obtained using the
-    previous function mv\_G\_GE for genome-wide genetic variants.
+    previous function mv_G_GE for genome-wide genetic variants.
 3.  SST: this function implements the subset multiple hypothesis testing
     procedure to adjust for multiple testing while combining the two
     steps of testing gene-environment interaction based on the same two
@@ -42,9 +42,9 @@ install.packages("MPGE")
 library("MPGE")
 ```
 
-# Run mv\_G\_GE
+# Run mv_G_GE
 
-We will demonstrate how to run the mv\_G\_GE function. First, load the
+We will demonstrate how to run the mv_G_GE function. First, load the
 example data.
 
 ``` r
@@ -54,7 +54,7 @@ phenofile <- system.file("extdata", "phenotype_data.rda", package = "MPGE")
 head(phenotype_data)
 ```
 
-Here phenotype\_data is a data.frame with three columns for three
+Here phenotype_data is a data.frame with three columns for three
 phenotypes and the number of rows to be the number of individuals in the
 sample (500 in this toy data). Data for each phenotype provided must be
 adjusted individually for relevant covariates (e.g., age, sex, genetic
@@ -67,7 +67,7 @@ genofile <- system.file("extdata", "genotype_data.rda", package = "MPGE")
 head(genotype_data)
 ```
 
-Here, genotype\_data is a data.frame with the columns as SNPs (e.g., rs1
+Here, genotype_data is a data.frame with the columns as SNPs (e.g., rs1
 and rs2 here). The rows correspond to the 500 individuals in the same
 order as in the phenotype data.
 
@@ -79,14 +79,14 @@ head(environment_data)
 # For example, non-smoker coded as 0 and smoker coded as 1.
 ```
 
-Here, environment\_data is a data frame with single column for the
+Here, environment_data is a data frame with single column for the
 environmental variable. The order of the 500 individuals in the row must
 be the same as provided in the phenotype and genotype data. Here, the
 environmental variable has two categories which were coded as 1 and 0
 (e.g., smokers and non-smokers). Instead of numeric values, these can
 also be considered to be factors in the absence of a defined order in
 the categories. Now, given the required phenotype, genotype and
-environmental data, we run the mv\_G\_GE function next.
+environmental data, we run the mv_G_GE function next.
 
 ``` r
 #Compute the p-value of testing marginal multivariate genetic association. And, compute the p-value of testing multivariate GxE effect in presence of possible marginal genetic effect and marginal environmental effect on the phenotypes.
@@ -94,11 +94,11 @@ result <- mv_G_GE(phenotype_data, genotype_data, environment_data)
 result
 ```
 
-The output (“result”) of mv\_G\_GE is a data.frame. Each row of the
-output provides the pair of p-values for each genetic variant, first one
-(G.P) from the test of marginal overall genetic association, and the
-second one (GE.P) from the test of overall GxE effect in presence of
-possible marginal genetic effect and marginal environmental effect.
+The output (“result”) of mv_G_GE is a data.frame. Each row of the output
+provides the pair of p-values for each genetic variant, first one (G.P)
+from the test of marginal overall genetic association, and the second
+one (GE.P) from the test of overall GxE effect in presence of possible
+marginal genetic effect and marginal environmental effect.
 
 # Run WHT and SST
 
@@ -112,14 +112,14 @@ pvalues <- system.file("extdata", "mv_G_GxE_pvalues.rda", package = "MPGE")
 head(mv_G_GxE_pvalues)
 ```
 
-Here, mv\_G\_GxE\_pvalues is a data.frame with three columns. First
-column lists the set of 1000 genetic variants. Second column provides
-the vector of p-values obtained from testing the marginal multivariate
+Here, mv_G_GxE_pvalues is a data.frame with three columns. First column
+lists the set of 1000 genetic variants. Second column provides the
+vector of p-values obtained from testing the marginal multivariate
 genetic association for these SNPs. And the third column provides the
 vector of p-values obtained from testing the overall GxE effect in
 presence of possible marginal genetic effect and marginal environmental
 effect. Thus, the input data has the same structure as the output
-produced by the first function mv\_G\_GE. Next, we run WHT for this
+produced by the first function mv_G_GE. Next, we run WHT for this
 example data.
 
 ``` r
@@ -150,12 +150,14 @@ subset testing to adjust for the multiple comparison.
 manual. For any question, please send an email to
 <statgen.arunabha@gmail.com> or <tanushree.haldar@gmail.com>. Also, you
 can see our manuscript for more details related to the main method: A
-Majumdar, KS Burch, S Sankararaman, B Pasaniuc, WJ Gauderman, JS Witte
-(2020) A two-step approach to testing overall effect of gene-environment
-interaction for multiple phenotypes. bioRxiv.
+Majumdar, KS Burch, T Haldar, S Sankararaman, B Pasaniuc, WJ Gauderman,
+JS Witte. A two-step approach to testing overall effect of
+gene-environment interaction for multiple phenotypes. Bioinformatics 36,
+no. 24 (2020): 5640-5648.
 
 <!-- badges: start -->
 
 [![Travis build
-status](https://travis-ci.org/ArunabhaCodes/MPGE.svg?branch=master)](https://travis-ci.org/ArunabhaCodes/MPGE)
+status](https://app.travis-ci.com/ArunabhaCodes/MPGE.svg?branch=master)](https://app.travis-ci.com/ArunabhaCodes/MPGE)
+
 <!-- badges: end -->

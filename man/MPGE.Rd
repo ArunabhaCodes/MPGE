@@ -2,6 +2,7 @@
 % Please edit documentation in R/MPGE.R
 \docType{package}
 \name{MPGE}
+\alias{MPGE-package}
 \alias{MPGE}
 \title{MPGE: an R package to implement a two-step approach to testing overall effect of
 gene-environment interaction for multiple phenotypes.}
@@ -44,7 +45,24 @@ interaction based on the same two sets of p-values described above.}
 }
 
 \references{
-A Majumdar, KS Burch, S Sankararaman, B Pasaniuc, WJ Gauderman, JS Witte (2020)
+A Majumdar, KS Burch, T Haldar, S Sankararaman, B Pasaniuc, WJ Gauderman, JS Witte.
 A two-step approach to testing overall effect of gene-environment interaction for multiple phenotypes.
-bioRxiv, doi: https://doi.org/10.1101/2020.07.06.190256
+Bioinformatics 36, no. 24 (2020): 5640-5648, doi: https://doi.org/10.1093/bioinformatics/btaa1083
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/ArunabhaCodes/MPGE}
+  \item Report bugs at \url{https://github.com/ArunabhaCodes/MPGE/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Arunabha Majumdar \email{statgen.arunabha@gmail.com}
+
+Authors:
+\itemize{
+  \item Tanushree Haldar \email{tanushree.haldar@gmail.com}
+}
+
 }

@@ -49,9 +49,9 @@ genetic effect
 due to the genetic variant and an effect due to the environmental variable.
 }
 \references{
-A Majumdar, KS Burch, S Sankararaman, B Pasaniuc, WJ Gauderman, JS Witte (2020)
+A Majumdar, KS Burch, T Haldar, S Sankararaman, B Pasaniuc, WJ Gauderman, JS Witte.
 A two-step approach to testing overall effect of gene-environment interaction for multiple phenotypes.
-bioRxiv, doi: https://doi.org/10.1101/2020.07.06.190256
+Bioinformatics 36, no. 24 (2020): 5640-5648, doi: https://doi.org/10.1093/bioinformatics/btaa1083
 }
 \seealso{
 \code{\link{WHT}}, \code{\link{SST}}

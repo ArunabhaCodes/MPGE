@@ -32,9 +32,9 @@
 #'    \item{GEsnps}{Vector of SNPs/genetic variants identified to have a genome-wide significant overall GxE effect.}
 #'    \item{adjusted.PV}{A data.frame providing the adjusted p-values with the corresponding
 #'     genetic variants obtained by the weighted multiple hypothesis testing procedure.}
-#' @references A Majumdar, KS Burch, S Sankararaman, B Pasaniuc, WJ Gauderman, JS Witte (2020)
+#' @references A Majumdar, KS Burch, T Haldar, S Sankararaman, B Pasaniuc, WJ Gauderman, JS Witte.
 #' A two-step approach to testing overall effect of gene-environment interaction for multiple phenotypes.
-#' bioRxiv, doi: https://doi.org/10.1101/2020.07.06.190256
+#' Bioinformatics 36, no. 24 (2020): 5640-5648, doi: https://doi.org/10.1093/bioinformatics/btaa1083
 #'
 #' @seealso \code{\link{SST}}, \code{\link{mv_G_GE}}
 #'

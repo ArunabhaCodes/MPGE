@@ -27,9 +27,9 @@
 #' step while identifying the genetic variants having a genome-wide significant overall GxE effect
 #'  on the multivariate phenotype. Default is 0.05.
 #' @return The output is a vector of SNPs identified to have a genome-wide significant overall GxE effect.
-#' @references A Majumdar, KS Burch, S Sankararaman, B Pasaniuc, WJ Gauderman, JS Witte (2020)
+#' @references A Majumdar, KS Burch, T Haldar, S Sankararaman, B Pasaniuc, WJ Gauderman, JS Witte.
 #' A two-step approach to testing overall effect of gene-environment interaction for multiple phenotypes.
-#' bioRxiv, doi: https://doi.org/10.1101/2020.07.06.190256
+#' Bioinformatics 36, no. 24 (2020): 5640-5648, doi: https://doi.org/10.1093/bioinformatics/btaa1083
 #'
 #' @seealso \code{\link{WHT}}, \code{\link{mv_G_GE}}
 #'

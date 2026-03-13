@@ -16,7 +16,7 @@ mv_G_GE_base <- function(pheno, geno, env){
   }
 
   G <- G - mean(G)                 ## mean centered genotype vector
-  if( class(E) == "numeric" || class(E) == "integer" ) E <- E - mean(E)
+  if( inherits(E, "numeric") || inherits(E, "integer") ) E <- E - mean(E)
   ## mean centered environmental factor if numeric
   ##GE = G*E                         ## GxE covariate
 

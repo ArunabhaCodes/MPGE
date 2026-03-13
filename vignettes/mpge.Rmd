@@ -37,7 +37,7 @@ phenofile <- system.file("extdata", "phenotype_data.rda", package = "MPGE")
 head(phenotype_data)
 ```
 
-Here phenotype\_data is a data.frame with three columns for three phenotypes and the number of rows to be the number of individuals in the sample (500 in this toy data). Data for each phenotype provided must be adjusted individually for relevant covariates (e.g., age, sex, genetic ancestry) beforehand, and should follow a normal distribution.
+Here phenotype_data is a data.frame with three columns for three phenotypes and the number of rows to be the number of individuals in the sample (500 in this toy data). Data for each phenotype provided must be adjusted individually for relevant covariates (e.g., age, sex, genetic ancestry) beforehand, and should follow a normal distribution.
 
 ```{r load_geno, collapse = TRUE}
 library("MPGE")
@@ -46,7 +46,7 @@ genofile <- system.file("extdata", "genotype_data.rda", package = "MPGE")
 head(genotype_data)
 ```
 
-Here, genotype\_data is a data.frame with the columns as SNPs (e.g., rs1 and rs2 here). The rows correspond to the 500 individuals in the same order as in the phenotype data.
+Here, genotype_data is a data.frame with the columns as SNPs (e.g., rs1 and rs2 here). The rows correspond to the 500 individuals in the same order as in the phenotype data.
 
 ```{r load_env, collapse = TRUE}
 library("MPGE")

@@ -1,4 +1,4 @@
-context("Check inputs of function mv_G_GE")
+#context("Check inputs of function mv_G_GE")
 
 test_that("Throws error if pheno is not a numeric matrix or dataframe of more than one column", {
     expect_error(mv_G_GE(1:10, genotype_data, environment_data), "pheno should either be a matrix or a data.frame.")

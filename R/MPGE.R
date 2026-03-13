@@ -34,16 +34,16 @@
 #'                   testing while combining the two steps of testing gene-environment
 #'                   interaction based on the same two sets of p-values described above.}
 #'                   }
-#' @references A Majumdar, KS Burch, S Sankararaman, B Pasaniuc, WJ Gauderman, JS Witte (2020)
+#' @references A Majumdar, KS Burch, T Haldar, S Sankararaman, B Pasaniuc, WJ Gauderman, JS Witte.
 #' A two-step approach to testing overall effect of gene-environment interaction for multiple phenotypes.
-#' bioRxiv, doi: https://doi.org/10.1101/2020.07.06.190256
+#' Bioinformatics 36, no. 24 (2020): 5640-5648, doi: https://doi.org/10.1093/bioinformatics/btaa1083
 #'
 #'
-#' @docType package
 #' @importFrom stats lm
 #' @importFrom utils capture.output
 #' @importFrom utils read.table
 #'
-#' @name MPGE
+#' @name MPGE 
+"_PACKAGE"
 #'
 NULL

@@ -12,7 +12,7 @@ and 500 rows for the individuals in the sample.
 data(phenotype_data)
 }
 \description{
-Here phenotype\_data is a data.frame with three columns for three phenotypes
+Here phenotype_data is a data.frame with three columns for three phenotypes
 and the number of rows to be the number of individuals in the sample (500 in this toy data).
 Data for each phenotype provided must be adjusted individually for relevant
 covariates (e.g., age, sex, genetic ancestry) beforehand,
